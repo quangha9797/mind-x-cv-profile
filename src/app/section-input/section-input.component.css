@@ -1,0 +1,14 @@
+.si-common {
+    background-color: #fff;
+    width: 25vw;
+    box-shadow: 0 0 0.5cm #7b7d7d;
+}
+hr {
+  width: 80%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid hsla(0,0%,100%,.3);
+  padding-top: 20px;
+}
+

@@ -1,0 +1,24 @@
+<div class="si-common">
+  <div class="row">
+    <app-section-input-header [logoSelectedInput]="logoSelected" (logoSelected)="setLogoSelected($event)" (categorySelected)="setCategorySelected($event)"></app-section-input-header>
+  </div>
+
+  <div class="row si-hr">
+    <hr>
+  </div>
+
+  <h2 class="si-title">{{siTitle}}</h2>
+  <div class="row" *ngIf="!logoSelected; else chooseTemplate">
+    <app-section-input-content [currentCategory]="currentCategory"></app-section-input-content>
+  </div>
+
+  <ng-template class="row mt-5" #chooseTemplate>
+    <div class="col-6 d-flex justify-content-center">
+      <div class="row">
+        <img style="margin:auto" class="text-center" src="https://tourmaline-pie-5add33.netlify.app/static/media/templateA.e7c51d50.png" alt="" width="170" height="220">
+        <button style="margin:auto;color:#FF8E53;font-weight: bold;" class="d-flex justify-content-center" type="button" class="btn btn-light" (click)="chooseTemplateFunc('THE_BASIC')">{{theBasicButtonName}}</button>
+      </div>
+    </div>
+    <div class="col-6"></div>
+  </ng-template>
+</div>

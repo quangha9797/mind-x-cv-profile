@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="p-4 pl-5">
+    <a href="#" (click)="logoSelect(true)"><img [src]="imageSrc" alt=""></a>
+  </div>
+</div>
+
+<div class="container" *ngIf="!logoSelectedInput">
+  <div class="row d-flex justify-content-around">
+    <div class="col-3">
+      <button (click)="categorySelect('HEADER')" type="button" class="btn btn-primary">HEADER</button>
+    </div>
+    <div class="col-3">
+      <button (click)="categorySelect('EXPERIENCE')" type="button" class="btn btn-primary">EXPERIENCE</button>
+    </div>
+    <div class="col-3">
+      <button (click)="categorySelect('EDUCATION')" type="button" class="btn btn-primary">EDUCATION</button>
+    </div>
+    <div class="col-3">
+      <button (click)="categorySelect('SKILLS')" type="button" class="btn btn-primary">SKILLS</button>
+    </div>
+  </div>
+</div>
+
